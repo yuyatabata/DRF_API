@@ -4,9 +4,9 @@ from .models import Obj, Branch
 from .serializer import ObjSerializer, BranchSerializer
 
 class ObjViewSet(viewsets.ModelViewSet):
-    query = Obj.objects.all()
+    queryset = Obj.objects.all()
     serializer_class = ObjSerializer
 
 class BranchViewSet(viewsets.ModelViewSet):
-    query = Branch.objects.all()
+    queryset = Branch.objects.all()
     serializer_class = BranchSerializer
